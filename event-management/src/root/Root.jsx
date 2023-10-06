@@ -1,3 +1,4 @@
+import Footer from '../components/footer/Footer';
 import NavMenus from '../components/navMneus/NavMenus';
 
 const Root = () => {
@@ -7,12 +8,10 @@ const Root = () => {
                 <nav>
                     <NavMenus />
                 </nav>
-                <h2>this is header</h2>
+                <h2 className='bg-green-300 mt-64'>this is hero section</h2>
             </header>
             <main className="font-barlow myContainer">this is Min section</main>
-            <footer className="font-barlow myContainer">
-                this is footer section
-            </footer>
+            <Footer />
         </>
     );
 };

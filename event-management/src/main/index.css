@@ -7,4 +7,13 @@
     .myContainer{
         @apply container sm:container md:container lg:container xl:container 2xl:container mx-auto
     }
+
+
+    .menuStyle{
+        @apply flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-8
+    }
+
+    .active {
+       @apply text-emerald-500
+    }
 }
