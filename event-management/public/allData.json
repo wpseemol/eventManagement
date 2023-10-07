@@ -29,5 +29,27 @@
             "themaiUrl": "https://i.ibb.co/tQQsRjQ/table-1-2-674x350.jpg",
             "imageUrl": "https://i.ibb.co/MSPrhH0/table-4-670x630.jpg"
         }
+    ],
+    "clint": [
+        {
+            "logo": "https://i.ibb.co/JCwvbLJ/clintitme1.png",
+            "id": "clint1"
+        },
+        {
+            "logo": "https://i.ibb.co/JKnHBs7/clintitme2.png",
+            "id": "clint2"
+        },
+        {
+            "logo": "https://i.ibb.co/RcgvTkF/clintitme3.png",
+            "id": "clint3"
+        },
+        {
+            "logo": "https://i.ibb.co/4TtFrkQ/clintitme4.png",
+            "id": "clint4"
+        },
+        {
+            "logo": "https://i.ibb.co/B3Mtmtb/clintitme5.png",
+            "id": "clint5"
+        }
     ]
 }
