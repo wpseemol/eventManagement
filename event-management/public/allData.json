@@ -21,5 +21,13 @@
             "title": "Graphics and Storage",
             "Description": "Whether you want to elevate the everyday meal or plan an elegant dinner party, we are here to deliver lots of style with little fuss."
         }
+    ],
+    "premium": [
+        {
+            "title": "Premium Tablescape Rental And Services",
+            "description": "We have the best experts to elevate your business to the next level, est experts to elevate your business to the next leve try is and you will see! We have the best experts to elevate your business to the next level.",
+            "themaiUrl": "https://i.ibb.co/tQQsRjQ/table-1-2-674x350.jpg",
+            "imageUrl": "https://i.ibb.co/MSPrhH0/table-4-670x630.jpg"
+        }
     ]
 }
