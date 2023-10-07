@@ -1,4 +1,10 @@
 import { useLoaderData } from 'react-router-dom';
+import Marquee from 'react-fast-marquee';
+import clint1 from '../../assets/clintes/clintitme1.png';
+import clint2 from '../../assets/clintes/clintitme2.png';
+import clint3 from '../../assets/clintes/clintitme3.png';
+import clint4 from '../../assets/clintes/clintitme4.png';
+import clint5 from '../../assets/clintes/clintitme5.png';
 
 const Home = () => {
     const { premium, experience, experienceColor } = useLoaderData() || {};
@@ -71,6 +77,80 @@ const Home = () => {
                             alt="Premium Item Image"
                             className="w-full h-full object-cover object-center"
                         />
+                    </div>
+                </div>
+            </section>
+            {/* clint section */}
+            <section className="py-24 px-2">
+                <div>
+                    <Marquee pauseOnHover={true}>
+                        <div className="lg:mx-16 mx-8">
+                            <img
+                                src={clint1}
+                                alt="Clint 1"
+                                className="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <div className="lg:mx-16 mx-8">
+                            <img
+                                src={clint2}
+                                alt="Clint 2"
+                                className="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <div className="lg:mx-16 mx-8">
+                            <img
+                                src={clint3}
+                                alt="Clint 3"
+                                className="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <div className="lg:mx-16 mx-8">
+                            <img
+                                src={clint4}
+                                alt="Clint 4"
+                                className="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                        <div className="lg:mx-16 mx-8">
+                            <img
+                                src={clint5}
+                                alt="Clint 5"
+                                className="w-full h-full object-cover object-center"
+                            />
+                        </div>
+                    </Marquee>
+                </div>
+            </section>
+            {/* Tablescape Services */}
+            <section className="py-24">
+                <div className="w-screen  sm:flex">
+                    <div className="sm:w-1/2 lg:h-[40rem] md:h-[30rem] h-96 px-3">
+                        <img
+                            src="https://i.ibb.co/JBv8tBw/tabilcape.jpg"
+                            alt="Table Cape Events"
+                            className="w-full h-full object-cover object-center"
+                        />
+                    </div>
+                    <div className="sm:w-1/2 flex items-center lg:ml-32 md:ml-20 ml-5">
+                        <div>
+                            <h2 className="md:text-5xl text-3xl font-semibold ">
+                                Tablescape Rentals And Services
+                            </h2>
+
+                            <p className="text-lg font-medium my-5">
+                                Etiam et leo ullamcorper, accumsan tortor ac,
+                                bibendum urna ornare. Nulla porttitor dui et
+                                blandit auctor. Mauris bibendum eleifend mattis
+                                egestas, tortor ipsum facilisis justo, dapibus
+                                metus condimentum magna felis sit amet nisl.
+                                Donec vel mauris ac ante mollis egestas ac sed
+                                magna. Duis sit amet fermentum et ipsum nec.
+                            </p>
+                            <button className="primaryBtn uppercase">
+                                get in touch
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
