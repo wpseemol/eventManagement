@@ -1,25 +1,24 @@
-import { useLocation } from "react-router-dom";
-import NavMenus from "../navMneus/NavMenus";
-import HeroSlider from "../slider/HeroSlider";
-import TopHeader from "../topHeader/TopHeader";
-
+import { useLocation } from 'react-router-dom';
+import HeroBanar from '../heroBanar/HeroBanar';
+import NavbarTopBarPreview from '../navBar/NavBar';
+import TopBar from '../topBar/TopBar';
 
 const Header = () => {
-     const whicesPage = useLocation();
-     console.log(whicesPage);
-    
-     if (whicesPage.pathname === '/') {
-         console.log('home');
-     }
-         return (
-             <>
-                 <TopHeader />
-                 {/* <NavMenus /> */}
-                 <HeroSlider>
-                     <NavMenus />
-                 </HeroSlider>
-             </>
-         );
+    const whichePage = useLocation();
+
+    return (
+        <>
+            <TopBar />
+
+            {whichePage.pathname === '/' ? (
+                <HeroBanar>
+                    <NavbarTopBarPreview />
+                </HeroBanar>
+            ) : (
+                <NavbarTopBarPreview />
+            )}
+        </>
+    );
 };
 
 export default Header;

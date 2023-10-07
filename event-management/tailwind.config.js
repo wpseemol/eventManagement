@@ -3,9 +3,9 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
-            fontFamily: {
-                'barlow': ['Barlow', 'sans-serif'],
-            },
+            fontFamily:{
+                barlow: ['Barlow', "sans-serif"]
+            }
         },
     },
     plugins: [],
