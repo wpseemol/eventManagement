@@ -1,9 +1,9 @@
-
 import { createBrowserRouter } from 'react-router-dom';
 import Root from '../root/Root';
-import Home from '../pages/Home';
-import Services from '../pages/servises/Services';
-
+import Home from '../pages/home/Home';
+import Services from '../pages/services/Services';
+import Account from '../pages/account/Account';
+import Contact from '../pages/contact/contact';
 
 const Router = createBrowserRouter([
     {
@@ -13,10 +13,21 @@ const Router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home />,
+                loader: async () => {
+                    return fetch(`/public/allData.json`);
+                },
             },
             {
                 path: '/services',
-                element: <div>this service</div>,
+                element: <Services />,
+            },
+            {
+                path: '/account',
+                element: <Account />,
+            },
+            {
+                path: '/contact',
+                element: <Contact />,
             },
         ],
     },

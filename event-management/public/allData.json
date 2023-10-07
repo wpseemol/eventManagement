@@ -1,0 +1,25 @@
+{
+    "experienceColor": "#fffbf7",
+    "experience": [
+        {
+            "imgUrl": "https://i.ibb.co/WfzgTVW/svgviewer-png-output.png",
+            "title": "Customized Exhibit Designs",
+            "Description": "When you rent from us you are participating in the shared economy! Our goal is to reduce the amount of items that end up ultimately in landfills."
+        },
+        {
+            "imgUrl": "https://i.ibb.co/GQrxThY/svgviewer-png-output2.png",
+            "title": "Modular Frame System",
+            "Description": "When our items are too worn out to rent, we will extend their lifecycles by donating them, or reusing the fabrics to make new items."
+        },
+        {
+            "imgUrl": "https://i.ibb.co/g6TTBhG/svgviewer-png-output1.png",
+            "title": "Rental Exhibit Options",
+            "Description": "It is more sustainable to rent items you would otherwise use only a couple of times. The more we can share, the less waste we create."
+        },
+        {
+            "imgUrl": "https://i.ibb.co/w4w7yPT/svgviewer-png-output3.png",
+            "title": "Graphics and Storage",
+            "Description": "Whether you want to elevate the everyday meal or plan an elegant dinner party, we are here to deliver lots of style with little fuss."
+        }
+    ]
+}

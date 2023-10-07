@@ -8,7 +8,7 @@ const Root = () => {
             <header className="font-barlow">
                 <Header />
             </header>
-            <main className="font-barlow myContainer">
+            <main className="font-barlow">
                 <Outlet />
             </main>
             <Footer />
