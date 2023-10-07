@@ -1,18 +1,19 @@
 import { Outlet } from 'react-router-dom';
 import Footer from '../components/footer/Footer';
-import NavMenus from '../components/navMneus/NavMenus';
+import Header from '../components/header/Header';
 
 const Root = () => {
     return (
         <>
-            <header className="font-barlow text-2xl font-bold">
-                <nav>
-                    <NavMenus />
-                </nav>
+            <header className="font-barlow">
+                
+                <Header />
+                   
                 
             </header>
-            
-            <Outlet />
+            <main className="font-barlow myContainer">
+                <Outlet />
+            </main>
             <Footer />
         </>
     );
