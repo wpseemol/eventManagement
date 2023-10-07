@@ -1,12 +1,10 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import siteLogo from '../../assets/Images/event management log.png'
+import siteLogo from '../../assets/Images/event management log.png';
 
 export default function NavbarTopBarPreview() {
     const [isToggleOpen, setIsToggleOpen] = useState(false);
 
-    
-    
     return (
         <>
             <div className=" relative border-b-1 z-20 w-full border-b border-slate-200 bg-white/40 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-slate-200 lg:border-slate-200 lg:backdrop-blur-sm lg:after:hidden text-xl">
@@ -22,11 +20,13 @@ export default function NavbarTopBarPreview() {
                             aria-current="page"
                             className="flex items-center gap-2 whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1 z-10"
                             to="/">
-                            <img
-                                src={siteLogo}
-                                alt="site logo"
-                                className="w-12 h-12 "
-                            />
+                            <div className="w-20 h-20 rounded-full  bg-gray-200/70 flex justify-center items-center">
+                                <img
+                                    src={siteLogo}
+                                    alt="site logo"
+                                    className="w-12 hover:scale-125 duration-300"
+                                />
+                            </div>
                         </Link>
                         {/*      <!-- Mobile trigger --> */}
                         <button

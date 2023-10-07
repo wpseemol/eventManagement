@@ -31,32 +31,32 @@ export default function HeroBanar({ children }) {
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                         <li key={1}>
                             <img
-                                src="https://Tailwindmix.b-cdn.net/image-03.jpg"
-                                className="w-full max-w-full max-h-full m-auto"
+                                src="https://memo.thevendry.com/wp-content/uploads/2022/05/Alexandria_-ballroom_palm_court.jpg"
+                                className="w-full max-w-full h-[45rem] object-fill object-center m-auto"
                             />
                         </li>
                         <li key={2}>
                             <img
-                                src="https://Tailwindmix.b-cdn.net/image-04.jpg"
-                                className="w-full max-w-full max-h-full m-auto"
+                                src="https://m.media-amazon.com/images/I/81O8PyG9EiS._AC_UF894,1000_QL80_.jpg"
+                                className="w-full max-w-full h-[45rem] object-fill object-center m-auto"
                             />
                         </li>
                         <li key={3}>
                             <img
-                                src="https://Tailwindmix.b-cdn.net/image-05.jpg"
-                                className="w-full max-w-full max-h-full m-auto"
+                                src="https://plus.unsplash.com/premium_photo-1663040492045-85ba19cbb55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                className="w-full max-w-full h-[45rem] object-fill object-center m-auto"
                             />
                         </li>
                         <li key={4}>
                             <img
-                                src="https://Tailwindmix.b-cdn.net/image-01.jpg"
-                                className="w-full max-w-full max-h-full m-auto"
+                                src="https://blog.lottenypalace.com/wp-content/uploads/2015/11/Christmas-Lotte-New-York-Palace-960x430.jpg"
+                                className="w-full max-w-full h-[45rem] object-fill object-center m-auto"
                             />
                         </li>
                         <li key={5}>
                             <img
-                                src="https://Tailwindmix.b-cdn.net/image-02.jpg"
-                                className="w-full max-w-full max-h-full m-auto"
+                                src="https://blog.lottenypalace.com/wp-content/uploads/2015/11/Holiday-Parties-Lotte-New-York-Palace.jpg"
+                                className="w-full max-w-full h-[45rem] object-fill object-center m-auto"
                             />
                         </li>
                     </ul>
