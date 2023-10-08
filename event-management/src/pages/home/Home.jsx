@@ -143,14 +143,24 @@ const Home = () => {
             </section>
             {/* our tem section */}
             <section className="myContainer py-24">
-                <div className="grid grid-cols-4 gap-5">
-                    {ourTem.map((temMember,inx) => {
-                        return <TemMember temMember={temMember} key={`temMember${inx}`} />;
+                <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-5">
+                    {ourTem.map((temMember, inx) => {
+                        return (
+                            <TemMember
+                                temMember={temMember}
+                                key={`temMember${inx}`}
+                            />
+                        );
                     })}
                 </div>
             </section>
 
             {/* prodact setion */}
+            <section className="bg-green-500 py-24">
+                <div className="myContainer grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-5">
+                    
+                </div>
+            </section>
         </>
     );
 };
