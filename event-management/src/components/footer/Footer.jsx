@@ -17,30 +17,22 @@ export default function Footer() {
                                 </h3>
                                 <ul>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Features
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Customers
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Why us?
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Pricing
                                         </a>
                                     </li>
@@ -56,37 +48,27 @@ export default function Footer() {
                                 </h3>
                                 <ul>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Documentation
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Training
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             System status
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             FAQ's
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Help Center
                                         </a>
                                     </li>
@@ -102,37 +84,27 @@ export default function Footer() {
                                 </h3>
                                 <ul>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             About us
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Careers
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Leadership
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Blog
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Events
                                         </a>
                                     </li>
@@ -148,30 +120,22 @@ export default function Footer() {
                                 </h3>
                                 <ul>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Contact
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Support
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Partners
                                         </a>
                                     </li>
                                     <li className="mb-2 leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Join research
                                         </a>
                                     </li>
@@ -188,8 +152,7 @@ export default function Footer() {
                                 id="WindUI-5-logo-sub"
                                 aria-label="WindUI logo"
                                 aria-current="page"
-                                className="col-span-1 flex items-center gap-2 whitespace-nowrap text-base font-medium leading-6 focus:outline-none md:col-span-4 lg:col-span-6"
-                                href="javascript:void(0)">
+                                className="col-span-1 flex items-center gap-2 whitespace-nowrap text-base font-medium leading-6 focus:outline-none md:col-span-4 lg:col-span-6">
                                 <svg
                                     width="300"
                                     height="300"
@@ -222,23 +185,17 @@ export default function Footer() {
                                 </h3>
                                 <ul className="flex flex-wrap items-center justify-end gap-2 lg:gap-4">
                                     <li className="leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             T&C
                                         </a>
                                     </li>
                                     <li className="leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Privacy
                                         </a>
                                     </li>
                                     <li className="leading-6">
-                                        <a
-                                            href="javascript:void(0)"
-                                            className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
+                                        <a className="transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600">
                                             Cookies
                                         </a>
                                     </li>

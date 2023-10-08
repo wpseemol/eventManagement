@@ -34,21 +34,20 @@ const Home = () => {
                         </button>
                     </div>
                     <div className="md:w-3/4 grid sm:grid-cols-2 grid-cols-1 gap-4">
-                        {experience.map((data, idx) => {
-                            console.log(idx);
+                        {experience?.map((data, idx) => {
                             return (
                                 <div key={idx} className="flex gap-3">
                                     <img
-                                        src={data.imgUrl}
-                                        alt={data.title}
+                                        src={data?.imgUrl}
+                                        alt={data?.title}
                                         className="w-14 h-14"
                                     />
                                     <div>
                                         <h2 className="text-2xl font-semibold mb-2">
-                                            {data.title}
+                                            {data?.title}
                                         </h2>
                                         <p className="text-lg font-medium">
-                                            {data.Description}
+                                            {data?.Description}
                                         </p>
                                     </div>
                                 </div>
@@ -63,15 +62,15 @@ const Home = () => {
                     <div className="lg:w-1/2 sm:flex lg:block gap-2 lg:mb-0 mb-5">
                         <div className="h-1/2 lg:w-fit sm:w-1/2">
                             <h2 className="lg:text-5xl text-3xl font-semibold mb-5 ">
-                                {premium[0].title}
+                                {premium[0]?.title}
                             </h2>
                             <p className="text-lg font-medium xl:pr-12 sm:pb-0 pb-3">
-                                {premium[0].description}
+                                {premium[0]?.description}
                             </p>
                         </div>
                         <div className="lg:h-1/2 lg:w-fit sm:w-1/2">
                             <img
-                                src={premium[0].themaiUrl}
+                                src={premium[0]?.themaiUrl}
                                 alt="Premium Item 1"
                                 className="w-full h-full object-cover object-center"
                             />
@@ -79,7 +78,7 @@ const Home = () => {
                     </div>
                     <div className="lg:w-1/2">
                         <img
-                            src={premium[0].imageUrl}
+                            src={premium[0]?.imageUrl}
                             alt="Premium Item Image"
                             className="w-full h-full object-cover object-center"
                         />
@@ -87,17 +86,18 @@ const Home = () => {
                 </div>
             </section>
             {/* clint section */}
-            <section className="py-24 px-2">
-                <div>
-                    <Marquee pauseOnHover={true}>
-                        {clint.map((singClint) => {
+            {/* <section className="py-24 px-2">
+                <div >
+                    <Marquee pauseOnHover={true} >
+                        {clint?.map((singClint, inx) => {
                             return (
                                 <>
                                     <div
                                         className="lg:mx-16 mx-8 w-36"
-                                        key={singClint.id}>
+                                        key={'cli' + inx}
+                                        >
                                         <img
-                                            src={singClint.logo}
+                                            src={singClint?.logo}
                                             alt="Clint 1"
                                             className="w-full h-full object-cover object-center"
                                         />
@@ -107,7 +107,7 @@ const Home = () => {
                         })}
                     </Marquee>
                 </div>
-            </section>
+            </section> */}
             {/* Tablescape Services */}
             <section className=" bg-green-500/25">
                 <div className="w-screen  sm:flex">
@@ -144,7 +144,7 @@ const Home = () => {
             {/* clints detels */}
             <section className="myContainer py-24">
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center justify-center">
-                    {happyClint.map((hClint, inx) => {
+                    {happyClint?.map((hClint, inx) => {
                         return <HappyClint info={hClint} key={'hpC' + inx} />;
                     })}
                 </div>
@@ -152,7 +152,7 @@ const Home = () => {
             {/* our tem section */}
             <section className="myContainer py-24">
                 <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center justify-center gap-5">
-                    {ourTem.map((temMember, inx) => {
+                    {ourTem?.map((temMember, inx) => {
                         return (
                             <TemMember
                                 temMember={temMember}
@@ -170,7 +170,7 @@ const Home = () => {
                         This Might Interest You
                     </h2>
                     <div className=" grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-5">
-                        {Products.map((product, inx) => {
+                        {Products?.map((product, inx) => {
                             return (
                                 <Product
                                     product={product}

@@ -1,61 +1,56 @@
-import glide from "@glidejs/glide";
-import { useEffect } from "react";
-import { useLoaderData } from "react-router-dom";
-
+import glide from '@glidejs/glide';
+import { useEffect } from 'react';
+import { useLoaderData } from 'react-router-dom';
 
 const Contact = () => {
-      
     const { imgGallery } = useLoaderData();
- 
 
+    useEffect(() => {
+        const slider = new glide('.glide-06', {
+            type: 'carousel',
+            focusAt: 'center',
+            perView: 3,
+            autoplay: 3000,
+            animationDuration: 700,
+            gap: 24,
+            classNames: {
+                nav: {
+                    active: '[&>*]:bg-wuiSlate-700',
+                },
+            },
+            breakpoints: {
+                1024: {
+                    perView: 2,
+                },
+                640: {
+                    perView: 1,
+                },
+            },
+        }).mount();
 
-
-     useEffect(() => {
-         const slider = new glide('.glide-06', {
-             type: 'carousel',
-             focusAt: 'center',
-             perView: 3,
-             autoplay: 3000,
-             animationDuration: 700,
-             gap: 24,
-             classNames: {
-                 nav: {
-                     active: '[&>*]:bg-wuiSlate-700',
-                 },
-             },
-             breakpoints: {
-                 1024: {
-                     perView: 2,
-                 },
-                 640: {
-                     perView: 1,
-                 },
-             },
-         }).mount();
-
-         return () => {
-             slider.destroy();
-         };
-     }, []);
+        return () => {
+            slider.destroy();
+        };
+    }, []);
     return (
         <>
             <section className="myContainer py-24">
                 <div>
-                    <h2 className="md:text-5xl text-3xl font-semibold mb-5 capitalize">
+                    <h2 className="md:text-5xl text-3xl font-semibold mb-5 capitalize text-center md:text-left">
                         Get in touch
                     </h2>
                 </div>
-                <div className="grid grid-cols-3 gap-5">
+                <div className="grid md:grid-cols-3 gap-5">
                     <div className="col-span-1">
                         <div>
-                            <p>
+                            <p className="px-3 md:px-0">
                                 Efficiently unleash cross-media information
                                 without cross-media value. Quickly maximize
                                 timely deliverable. Exerci tation ullamcorper
                                 suscipit lobortis nisl ut aliquip ex ea commodo
                                 no.
                             </p>
-                            <div className="">
+                            <div className="md:block sm:flex flex-col items-center px-3 sm:px-0">
                                 <div className="mt-8 flex gap-4 items-center">
                                     <div className="w-16">
                                         <img
@@ -108,7 +103,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-span-2">
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="sm:grid grid-cols-2  sm:gap-6 gap-3 px-3 sm:px-3">
                             <div>
                                 <label className=" font-medium text-xl">
                                     Your Name (required)
@@ -160,7 +155,7 @@ const Contact = () => {
                                     className="border w-full p-3 rounded outline-emerald-500 focus:outline"
                                 />
                             </div>
-                            <div className="col-span-2 ">
+                            <div className="col-span-2 mt-4 sm:mt-0">
                                 <div className="relative">
                                     <textarea
                                         type="text"
@@ -182,7 +177,7 @@ const Contact = () => {
                 {/*    <!-- Slides --> */}
                 <div className="overflow-hidden" data-glide-el="track">
                     <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-                        {imgGallery.map((imgUrl)=>{
+                        {imgGallery.map((imgUrl) => {
                             return (
                                 <>
                                     <li>
@@ -201,7 +196,6 @@ const Contact = () => {
                                 className="m-auto max-h-full w-full max-w-full"
                             />
                         </li> */}
-                        
                     </ul>
                 </div>
                 {/*    <!-- Controls --> */}

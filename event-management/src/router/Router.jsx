@@ -5,6 +5,7 @@ import Services from '../pages/services/Services';
 import Account from '../pages/account/Account';
 import Contact from '../pages/contact/contact';
 import SingUp from '../components/singUp/SingUp';
+import PrivetRoute from '../privetRoute/privetRoute';
 
 const Router = createBrowserRouter([
     {
@@ -20,7 +21,11 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/services',
-                element: <Services />,
+                element: (
+                    <PrivetRoute>
+                        <Services />
+                    </PrivetRoute>
+                ),
             },
             {
                 path: '/account',

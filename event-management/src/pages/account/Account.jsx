@@ -1,21 +1,62 @@
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../providers/AuthProvider';
 
 const Account = () => {
+    const loginRegInfo = useContext(AuthContext);
+    const { singIn, logInGoogle } = loginRegInfo || {};
+
+    const location = useLocation();
+    console.log();
+
+    const navigate = useNavigate();
+
+    const handleSingIn = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        singIn(email, password)
+            .then((userCredential) => {
+                // Login  Successful
+                const user = userCredential.user;
+                e.target.reset();
+                location?.state ? navigate('location?.state') : navigate('/');
+            })
+            .catch((error) => {
+                console.log(error.message, 'code- ' + error.code);
+            });
+    };
+
+    const handalLoginwitheGoogle = () => {
+        logInGoogle()
+            .then((result) => {
+                //successful login with Google
+                const user = result.user;
+                location?.state ? navigate('location?.state') : navigate('/');
+            })
+            .catch((error) => {
+                // Handle Errors here.
+                console.log(error);
+            });
+    };
+
     return (
         <>
             {/* login section */}
             <section className="myContainer flex justify-center py-24">
                 <div className="w-full border max-w-md p-8 space-y-3 rounded-xl dark:bg-gray-900 dark:text-gray-100 text-lg">
                     <h1 className="text-3xl font-bold text-center">Login</h1>
-                    <form className="space-y-6">
+
+                    {/* form start here  */}
+                    <form className="space-y-6" onSubmit={handleSingIn}>
                         <div className="space-y-1">
                             <label className="block dark:text-gray-400">
                                 Email
                             </label>
                             <input
+                                required
                                 type="email"
-                                name="username"
-                                id="username"
+                                name="email"
                                 placeholder="Email"
                                 className="w-full border px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400 outline-green-500"
                             />
@@ -25,9 +66,9 @@ const Account = () => {
                                 Password
                             </label>
                             <input
+                                required
                                 type="password"
                                 name="password"
-                                id="password"
                                 placeholder="Password"
                                 className="w-full border px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-violet-400 outline-green-500"
                             />
@@ -37,10 +78,15 @@ const Account = () => {
                                 </a>
                             </div>
                         </div>
-                        <button className="block bg-green-500 border text-white font-semibold w-full p-3 text-center rounded-sm dark:text-gray-900 dark:bg-violet-400">
-                            Sign in
-                        </button>
+
+                        <input
+                            type="submit"
+                            value="Sign in"
+                            className="block primaryBtn font-semibold w-full"
+                        />
                     </form>
+                    {/* form end here  */}
+
                     <div className="flex items-center pt-4 space-x-1">
                         <div className="flex-1 h-px sm:w-16 dark:bg-gray-700"></div>
                         <p className="px-3 dark:text-gray-400">
@@ -50,6 +96,7 @@ const Account = () => {
                     </div>
                     <div className="flex justify-center space-x-4">
                         <button
+                            onClick={handalLoginwitheGoogle}
                             aria-label="Log in with Google"
                             className="p-3 rounded-sm border">
                             <svg

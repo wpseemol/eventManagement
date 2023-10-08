@@ -1,9 +1,17 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import siteLogo from '../../assets/Images/event management log.png';
+import { AuthContext } from '../../providers/AuthProvider';
+import LoginInformation from '../loginInformation/LoginInformation';
+import '../../assets/css/hover.css';
 
 export default function NavbarTopBarPreview() {
     const [isToggleOpen, setIsToggleOpen] = useState(false);
+
+    const loginRegInfo = useContext(AuthContext);
+    const { user, logOut } = loginRegInfo || {};
+
+    // console.log(user?.email);
 
     return (
         <>
@@ -56,7 +64,7 @@ export default function NavbarTopBarPreview() {
                         <ul
                             role="menubar"
                             aria-label="Select page"
-                            className={`absolute top-0 left-0 z-[-1] h-[28.5rem] w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain bg-white/60 px-8 pb-12 pt-24 font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 text-white ${
+                            className={`absolute top-[5.5rem] left-0 z-[-1] h-fit w-full justify-center overflow-hidden  overflow-y-auto overscroll-contain  px-8 pb-6  font-medium transition-[opacity,visibility] duration-300 lg:visible lg:relative lg:top-0  lg:z-0 lg:flex lg:h-full lg:w-auto lg:items-stretch lg:overflow-visible lg:bg-white/0 lg:px-0 lg:py-0  lg:pt-0 lg:opacity-100 lg:text-white text-black ${
                                 isToggleOpen
                                     ? 'visible opacity-100 backdrop-blur-sm'
                                     : 'invisible opacity-0'
@@ -65,8 +73,7 @@ export default function NavbarTopBarPreview() {
                                 <div
                                     role="menuitem"
                                     aria-haspopup="false"
-                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
-                                    href="javascript:void(0)">
+                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4">
                                     <NavLink
                                         to="/"
                                         className={({ isActive, isPending }) =>
@@ -84,8 +91,7 @@ export default function NavbarTopBarPreview() {
                                 <div
                                     role="menuitem"
                                     aria-haspopup="false"
-                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
-                                    href="javascript:void(0)">
+                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4">
                                     <NavLink
                                         to="/services"
                                         className={({ isActive, isPending }) =>
@@ -103,8 +109,7 @@ export default function NavbarTopBarPreview() {
                                 <div
                                     role="menuitem"
                                     aria-haspopup="false"
-                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
-                                    href="javascript:void(0)">
+                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4">
                                     <NavLink
                                         to="/account"
                                         className={({ isActive, isPending }) =>
@@ -123,8 +128,7 @@ export default function NavbarTopBarPreview() {
                                 <div
                                     role="menuitem"
                                     aria-haspopup="false"
-                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4"
-                                    href="javascript:void(0)">
+                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4">
                                     <NavLink
                                         to="/contact"
                                         className={({ isActive, isPending }) =>
@@ -141,11 +145,31 @@ export default function NavbarTopBarPreview() {
                         </ul>
                         {/*      <!-- Actions --> */}
                         <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">
-                            <Link to="/sign-up">
-                                <button className="primaryBtn">
-                                    Get Start
-                                </button>
-                            </Link>
+                            {user?.email ? (
+                                <div className="relative duration-300 abaterImageHover">
+                                    <img
+                                        alt=""
+                                        className="w-12 h-12 rounded-full ri ri dark:bg-gray-500 ri ri"
+                                        src={
+                                            user?.photoURL
+                                                ? user?.photoURL
+                                                : 'https://i.ibb.co/wBfQjTy/user-Image.png'
+                                        }
+                                    />
+                                    <div className="hidden hover:block duration-300 loginInformationShow">
+                                        <LoginInformation
+                                            info={user}
+                                            logOutFun={logOut}
+                                        />
+                                    </div>
+                                </div>
+                            ) : (
+                                <Link to="/sign-up">
+                                    <button className="primaryBtn">
+                                        Get Start
+                                    </button>
+                                </Link>
+                            )}
                         </div>
                     </nav>
                 </div>
