@@ -27,7 +27,7 @@ const HappyClint = ({ info }) => {
                         )}
                         {number && (
                             <h2 className="text-3xl my-3">
-                                <CountUp end={number} duration={5} />
+                                <CountUp end={number} duration={10} />
                             </h2>
                         )}
                         {proj && <h2 className="text-3xl">{proj}</h2>}
