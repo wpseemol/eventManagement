@@ -28,11 +28,14 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/sign-up',
-                element: <SingUp /> ,
+                element: <SingUp />,
             },
             {
                 path: '/contact',
                 element: <Contact />,
+                loader: async () => {
+                    return fetch(`/gallery.json`);
+                },
             },
         ],
     },
