@@ -51,5 +51,50 @@
             "logo": "https://i.ibb.co/B3Mtmtb/clintitme5.png",
             "id": "clint5"
         }
+    ],
+
+    "happyClint": [
+        {
+            "title": "Trusted by over 250 clients",
+            "description": "We have experts to elevate you business to the next leve"
+        },
+        {
+            "icon": "https://i.ibb.co/mBB8cft/svgviewer-png-output-6.png",
+            "proj": "Projects",
+            "number": 24
+        },
+        {
+            "icon": "https://i.ibb.co/wYQ99B2/svgviewer-png-output-5.png",
+            "proj": "Happy Clients",
+            "number": 1024
+        },
+        {
+            "icon": "https://i.ibb.co/mBB8cft/svgviewer-png-output-6.png",
+            "proj": "Booth Rentals",
+            "number": 99
+        }
+    ],
+
+    "ourTem": [
+        {
+            "name": "Alex Valdemir",
+            "jobs": "Senior Director",
+            "imgUrl": "https://i.ibb.co/SPhPx8g/team-1-1.jpg"
+        },
+        {
+            "name": "John Harris",
+            "jobs": "PROJECT MANAGER",
+            "imgUrl": "https://i.ibb.co/TRthqNV/team-2-1.jpg"
+        },
+        {
+            "name": "Amine Jazouli",
+            "jobs": "DESIGNER",
+            "imgUrl": "https://i.ibb.co/LkjZ3z3/team-3-1.jpg"
+        },
+        {
+            "name": "Aleen Valzac",
+            "jobs": "CEO",
+            "imgUrl": "https://i.ibb.co/YNMCchR/team-4.jpg"
+        }
     ]
 }

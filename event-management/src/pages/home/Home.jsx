@@ -1,8 +1,10 @@
 import { useLoaderData } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
+import HappyClint from '../../components/happyClint/HappyClint';
+import TemMember from '../../components/temMember/temMember';
 
 const Home = () => {
-    const { clint, premium, experience, experienceColor } =
+    const { happyClint, clint, premium, experience, experienceColor, ourTem } =
         useLoaderData() || {};
     console.log(premium[0]);
 
@@ -130,6 +132,25 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* clints detels */}
+            <section className="myContainer py-24">
+                <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-center justify-center">
+                    {happyClint.map((hClint, inx) => {
+                        return <HappyClint info={hClint} key={'hpC' + inx} />;
+                    })}
+                </div>
+            </section>
+            {/* our tem section */}
+            <section className="myContainer py-24">
+                <div className="grid grid-cols-4 gap-5">
+                    {ourTem.map((temMember,inx) => {
+                        return <TemMember temMember={temMember} key={`temMember${inx}`} />;
+                    })}
+                </div>
+            </section>
+
+            {/* prodact setion */}
         </>
     );
 };
