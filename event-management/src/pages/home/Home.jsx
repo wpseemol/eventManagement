@@ -2,11 +2,19 @@ import { useLoaderData } from 'react-router-dom';
 import Marquee from 'react-fast-marquee';
 import HappyClint from '../../components/happyClint/HappyClint';
 import TemMember from '../../components/temMember/temMember';
+import Product from '../../components/product/Product';
+import FawComponet from '../../components/fawComponet/FawComponet';
 
 const Home = () => {
-    const { happyClint, clint, premium, experience, experienceColor, ourTem } =
-        useLoaderData() || {};
-    console.log(premium[0]);
+    const {
+        happyClint,
+        clint,
+        premium,
+        experience,
+        experienceColor,
+        ourTem,
+        Products,
+    } = useLoaderData() || {};
 
     return (
         <>
@@ -101,7 +109,7 @@ const Home = () => {
                 </div>
             </section>
             {/* Tablescape Services */}
-            <section className=" bg-slate-500">
+            <section className=" bg-green-500/25">
                 <div className="w-screen  sm:flex">
                     <div className="sm:w-1/2 lg:h-[45rem] md:h-[30rem] h-96 ">
                         <img
@@ -143,7 +151,7 @@ const Home = () => {
             </section>
             {/* our tem section */}
             <section className="myContainer py-24">
-                <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1  gap-5">
+                <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center justify-center gap-5">
                     {ourTem.map((temMember, inx) => {
                         return (
                             <TemMember
@@ -156,9 +164,28 @@ const Home = () => {
             </section>
 
             {/* prodact setion */}
-            <section className="bg-green-500 py-24">
-                <div className="myContainer grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-5">
-                    
+            <section className="bg-green-500/50 py-24">
+                <div className="myContainer mb-16 p-2 sm:p-0">
+                    <h2 className="md:text-5xl text-3xl font-semibold mb-5 text-white">
+                        This Might Interest You
+                    </h2>
+                    <div className=" grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-5">
+                        {Products.map((product, inx) => {
+                            return (
+                                <Product
+                                    product={product}
+                                    key={`product${inx}`}
+                                />
+                            );
+                        })}
+                    </div>
+                </div>
+            </section>
+
+            {/* faq section */}
+            <section className="myContainer py-24">
+                <div className="grid grid-cols-3">
+                    <FawComponet />
                 </div>
             </section>
         </>

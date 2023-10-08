@@ -1,0 +1,8 @@
+.prodactContainer:hover .productImage {
+    transform: scale(1.1);
+}
+
+.prodactContainer:hover .prodectHoverBtn {
+    bottom: 0;
+    background: #00000026;
+}
