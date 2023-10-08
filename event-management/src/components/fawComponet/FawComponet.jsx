@@ -2,12 +2,12 @@ const FawComponet = () => {
     return (
         <>
             <div className="col-span-1">
-                <div>
+                <div className="text-center sm:text-left">
                     <h4 className="text-lg">Every Question as an Answer</h4>
                     <h2 className="md:text-5xl text-3xl font-semibold mb-5">
                         Frequently Asked <br /> Questions
                     </h2>
-                    <p className="text-lg font-medium">
+                    <p className="text-lg font-medium sm:mx-0 mx-4 sm:px-0 px-8">
                         From smarter software to specialized agent training, our
                         multi-channel expertise encourages.
                     </p>

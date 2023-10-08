@@ -184,10 +184,20 @@ const Home = () => {
 
             {/* faq section */}
             <section className="myContainer py-24">
-                <div className="grid grid-cols-3">
+                <div className="grid sm:grid-cols-3 grid-cols-1 px-3 sm:px-0">
                     <FawComponet />
                 </div>
             </section>
+
+            {/* Latest News */}
+            {/* <section className="myContainer py-24">
+                <div className='text-center'>
+                    <p className='text-lg font-medium'>Always Good &</p>
+                    <h2 className="md:text-5xl text-3xl font-semibold mb-5">
+                        Latest News
+                    </h2>
+                </div>
+            </section> */}
         </>
     );
 };

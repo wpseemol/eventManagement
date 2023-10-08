@@ -4,6 +4,7 @@ import Home from '../pages/home/Home';
 import Services from '../pages/services/Services';
 import Account from '../pages/account/Account';
 import Contact from '../pages/contact/contact';
+import SingUp from '../components/singUp/SingUp';
 
 const Router = createBrowserRouter([
     {
@@ -14,7 +15,7 @@ const Router = createBrowserRouter([
                 path: '/',
                 element: <Home />,
                 loader: async () => {
-                    return fetch(`/public/allData.json`);
+                    return fetch(`/allData.json`);
                 },
             },
             {
@@ -24,6 +25,10 @@ const Router = createBrowserRouter([
             {
                 path: '/account',
                 element: <Account />,
+            },
+            {
+                path: '/sign-up',
+                element: <SingUp /> ,
             },
             {
                 path: '/contact',
