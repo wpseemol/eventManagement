@@ -142,6 +142,42 @@ export default function NavbarTopBarPreview() {
                                     </NavLink>
                                 </div>
                             </li>
+                            <li role="none" className="flex items-stretch">
+                                <div
+                                    role="menuitem"
+                                    aria-haspopup="false"
+                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4">
+                                    <NavLink
+                                        to="/about"
+                                        className={({ isActive, isPending }) =>
+                                            isPending
+                                                ? 'pending'
+                                                : isActive
+                                                ? 'active'
+                                                : ''
+                                        }>
+                                        <span>About</span>
+                                    </NavLink>
+                                </div>
+                            </li>
+                            <li role="none" className="flex items-stretch">
+                                <div
+                                    role="menuitem"
+                                    aria-haspopup="false"
+                                    className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:bg-emerald-50 focus:outline-none focus-visible:outline-none lg:px-4">
+                                    <NavLink
+                                        to="/privacy-policy"
+                                        className={({ isActive, isPending }) =>
+                                            isPending
+                                                ? 'pending'
+                                                : isActive
+                                                ? 'active'
+                                                : ''
+                                        }>
+                                        <span>Privacy Policy</span>
+                                    </NavLink>
+                                </div>
+                            </li>
                         </ul>
                         {/*      <!-- Actions --> */}
                         <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 lg:p-0">

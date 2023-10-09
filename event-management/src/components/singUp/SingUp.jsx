@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import swal from 'sweetalert';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const SingUp = () => {
     const loginRegInfo = useContext(AuthContext);
@@ -16,6 +18,20 @@ const SingUp = () => {
         const username = e.target.username.value;
         const fullName = e.target.name.value;
         const picture = e.target.picture.value;
+
+        if (password.length < 6) {
+            toast('Password less than 6 Character.');
+            return;
+        }
+        if (!/[A-Z]/.test(password)) {
+            toast('Password must least one capital letter.');
+            return;
+        }
+        if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+            toast('Password must at least one special character.');
+            return;
+        }
+
         singUp(email, password)
             .then((userCredential) => {
                 // Signed up Successful
@@ -24,7 +40,7 @@ const SingUp = () => {
                 swal({
                     title: 'Account Sreated Successful',
                     text: 'If you want to login you can login now👌',
-                    icon: 'success',
+                    icon: 'info',
                     dangerMode: true,
                 }).then((willDelete) => {
                     if (willDelete) {

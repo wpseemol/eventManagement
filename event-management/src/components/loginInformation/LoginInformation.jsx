@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginInformation = ({ info, logOutFun }) => {
     const handalLogout = () => {
@@ -6,6 +8,7 @@ const LoginInformation = ({ info, logOutFun }) => {
             .then(() => {
                 // Sign-out successful.
                 console.log('log out successful');
+                toast('Log out Successful');
             })
             .catch(() => {
                 // An error happened.

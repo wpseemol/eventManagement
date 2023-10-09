@@ -2,6 +2,8 @@ import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import swal from 'sweetalert';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const Account = () => {
     const loginRegInfo = useContext(AuthContext);
@@ -16,14 +18,28 @@ const Account = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
+
+        if (password.length < 6) {
+            toast('Password less than 6 Character.');
+            return;
+        }
+        if (!/[A-Z]/.test(password)) {
+            toast('Password must least one capital letter.');
+            return;
+        }
+        if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+            toast('Password must at least one special character.');
+            return;
+        }
+
         singIn(email, password)
             .then((userCredential) => {
                 // Login  Successful
                 const user = userCredential.user;
                 e.target.reset();
                 swal({
-                    title: 'Account Sreated Successful',
-                    text: 'If you want to login you can login now👌',
+                    title: 'Account Login Successful',
+                    text: 'Now you are logged in👌',
                     icon: 'success',
                     dangerMode: true,
                 }).then((willDelete) => {
@@ -35,7 +51,12 @@ const Account = () => {
                 });
             })
             .catch((error) => {
-                console.log(error.message, 'code- ' + error.code);
+                swal({
+                    title: 'Oop Something is happened',
+                    text: error.message,
+                    icon: 'error',
+                    dangerMode: true,
+                }).then((willDelete) => {});
             });
     };
 
@@ -46,8 +67,8 @@ const Account = () => {
                 const user = result.user;
 
                 swal({
-                    title: 'Account Sreated Successful',
-                    text: 'If you want to login you can login now👌',
+                    title: 'Login Successful',
+                    text: 'Now you are logged in👌',
                     icon: 'success',
                     dangerMode: true,
                 }).then((willDelete) => {
@@ -61,7 +82,7 @@ const Account = () => {
             .catch((error) => {
                 // Handle Errors here.
                 swal({
-                    title: 'Something Is Happened',
+                    title: 'Oop Something is happened',
                     text: error.message,
                     icon: 'error',
                     dangerMode: true,

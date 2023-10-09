@@ -8,6 +8,8 @@ import SingUp from '../components/singUp/SingUp';
 import PrivetRoute from '../privetRoute/privetRoute';
 import ErrorPage from '../pages/errorPage/ErrorPage';
 import SinglePage from '../pages/singlePage/SinglePage';
+import PrivacyPolicy from '../pages/privacyPolicy/PrivacyPolicy';
+import About from '../pages/about/About';
 
 const Router = createBrowserRouter([
     {
@@ -53,11 +55,23 @@ const Router = createBrowserRouter([
                 element: <SingUp />,
             },
             {
+                path: '/privacy-policy',
+                element: (
+                    <PrivetRoute>
+                        <PrivacyPolicy />,
+                    </PrivetRoute>
+                ),
+            },
+            {
                 path: '/contact',
                 element: <Contact />,
                 loader: async () => {
                     return fetch(`/gallery.json`);
                 },
+            },
+            {
+                path: '/about',
+                element: <About />,
             },
         ],
     },
