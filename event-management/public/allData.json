@@ -33,23 +33,23 @@
     "clint": [
         {
             "logo": "https://i.ibb.co/JCwvbLJ/clintitme1.png",
-            "id": "clint1"
+            "id": "1"
         },
         {
             "logo": "https://i.ibb.co/JKnHBs7/clintitme2.png",
-            "id": "clint2"
+            "id": "2"
         },
         {
             "logo": "https://i.ibb.co/RcgvTkF/clintitme3.png",
-            "id": "clint3"
+            "id": "3"
         },
         {
             "logo": "https://i.ibb.co/4TtFrkQ/clintitme4.png",
-            "id": "clint4"
+            "id": "4"
         },
         {
             "logo": "https://i.ibb.co/B3Mtmtb/clintitme5.png",
-            "id": "clint5"
+            "id": "5"
         }
     ],
 
@@ -99,6 +99,7 @@
     ],
     "Products": [
         {
+            "id": "item-1",
             "name": "Mobile AC",
             "price": "50.00/ Day",
             "type": "Climate Control",
@@ -109,7 +110,7 @@
                 "Pink, Orange and Purple plates not available in all sizes.",
                 "Contact customer service for additional information."
             ],
-            "Dimensions": [
+            "dimensions": [
                 ["General Dimensions", "34\" Dia. x 16\" H"],
                 ["Marble Top", "31\" Dia. Carrara Marble"],
                 ["Wood Top", "4\" Dia. Solid Ash (hardwood)"],
@@ -120,11 +121,12 @@
             "imgGallery": [
                 "https://i.ibb.co/HV5HKhQ/Mobile-AC-4.jpg",
                 "https://i.ibb.co/7C4pWz9/Mobile-AC-3.jpg",
-                "https://i.ibb.co/Hq0zL45/Mobile-AC-2.jpg",
-                "https://i.ibb.co/sJYqGn7/Mobile-AC.jpg"
+                "https://i.ibb.co/Hq0zL45/Mobile-AC-2.jpg"
+                
             ]
         },
         {
+            "id": "item-2",
             "name": "Coffee Table",
             "price": "199.00/ Week",
             "type": "Tables",
@@ -147,11 +149,12 @@
                 "https://i.ibb.co/NTNT4vj/Coffee-Table-5.jpg",
                 "https://i.ibb.co/nbzstgc/Coffee-Table-4.jpg",
                 "https://i.ibb.co/HDnnQJv/Coffee-Table-3.jpg",
-                "https://i.ibb.co/kGCcxft/Coffee-Table-2.jpg",
-                "https://i.ibb.co/NKgQvBg/Coffee-Table.jpg"
+                "https://i.ibb.co/kGCcxft/Coffee-Table-2.jpg"
+                
             ]
         },
         {
+            "id": "item-3",
             "name": "Patio umbrella",
             "price": "199.00/ Week",
             "type": "Place Settings",
@@ -163,12 +166,19 @@
                 "Contact customer service for additional information."
             ],
 
+            "dimensions": [
+                ["General Dimensions", "34\" Dia. x 16\" H"],
+                ["Marble Top", "31\" Dia. Carrara Marble"],
+                ["Wood Top", "4\" Dia. Solid Ash (hardwood)"],
+                ["Glass Top", "34\" Dia. Tempered Glass"],
+                ["Base Material", "Steel, Electroplated"]
+            ],
+
             "fecerImgUrl": "https://i.ibb.co/N1QKTQP/Patio-umbrella.jpg",
             "imgGallery": [
                 "https://i.ibb.co/kMMLc4f/Patio-umbrella4.webp",
                 "https://i.ibb.co/kGCcxft/Coffee-Table-2.jpg",
-                "https://i.ibb.co/nbzstgc/Coffee-Table-4.jpg",
-                "https://i.ibb.co/N1QKTQP/Patio-umbrella.jpg"
+                "https://i.ibb.co/nbzstgc/Coffee-Table-4.jpg"
             ]
         }
     ]

@@ -1,9 +1,11 @@
 import { useLoaderData } from 'react-router-dom';
-import Marquee from 'react-fast-marquee';
 import HappyClint from '../../components/happyClint/HappyClint';
 import TemMember from '../../components/temMember/temMember';
 import Product from '../../components/product/Product';
 import FawComponet from '../../components/fawComponet/FawComponet';
+import WorkWith from '../../components/workWith/workWith';
+import Glide from '@glidejs/glide';
+import { useEffect } from 'react';
 
 const Home = () => {
     const {
@@ -15,6 +17,34 @@ const Home = () => {
         ourTem,
         Products,
     } = useLoaderData() || {};
+
+    useEffect(() => {
+        const slider = new Glide('.glide-09', {
+            type: 'carousel',
+            autoplay: 1,
+            animationDuration: 4500,
+            animationTimingFunc: 'linear',
+            perView: 5,
+            classes: {
+                nav: {
+                    active: '[&>*]:bg-wuiSlate-700',
+                },
+            },
+            breakpoints: {
+                1024: {
+                    perView: 2,
+                },
+                640: {
+                    perView: 1,
+                    gap: 36,
+                },
+            },
+        }).mount();
+
+        return () => {
+            slider.destroy();
+        };
+    }, []);
 
     return (
         <>
@@ -86,28 +116,23 @@ const Home = () => {
                 </div>
             </section>
             {/* clint section */}
-            {/* <section className="py-24 px-2">
-                <div >
-                    <Marquee pauseOnHover={true} >
-                        {clint?.map((singClint, inx) => {
-                            return (
-                                <>
-                                    <div
-                                        className="lg:mx-16 mx-8 w-36"
-                                        key={'cli' + inx}
-                                        >
-                                        <img
-                                            src={singClint?.logo}
-                                            alt="Clint 1"
-                                            className="w-full h-full object-cover object-center"
-                                        />
-                                    </div>
-                                </>
-                            );
-                        })}
-                    </Marquee>
+            <section className="py-24 px-2">
+                <div className="glide-09 relative w-full">
+                    <div data-glide-el="track">
+                        <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
+                            {clint?.map((singClint, inx) => {
+                                return (
+                                    <WorkWith
+                                        key={'ast' + singClint?.id}
+                                        singClint={singClint}
+                                        inx={inx}
+                                    />
+                                );
+                            })}
+                        </ul>
+                    </div>
                 </div>
-            </section> */}
+            </section>
             {/* Tablescape Services */}
             <section className=" bg-green-500/25">
                 <div className="w-screen  sm:flex">
@@ -170,7 +195,7 @@ const Home = () => {
                         This Might Interest You
                     </h2>
                     <div className=" grid xl:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-5">
-                        {Products?.map((product, inx) => {
+                        {Products?.slice(0, 3).map((product, inx) => {
                             return (
                                 <Product
                                     product={product}

@@ -6,11 +6,14 @@ import Account from '../pages/account/Account';
 import Contact from '../pages/contact/contact';
 import SingUp from '../components/singUp/SingUp';
 import PrivetRoute from '../privetRoute/privetRoute';
+import ErrorPage from '../pages/errorPage/ErrorPage';
+import SinglePage from '../pages/singlePage/SinglePage';
 
 const Router = createBrowserRouter([
     {
         path: '/',
         element: <Root />,
+        errorElement: <ErrorPage />,
         children: [
             {
                 path: '/',
@@ -24,6 +27,17 @@ const Router = createBrowserRouter([
                 element: (
                     <PrivetRoute>
                         <Services />
+                    </PrivetRoute>
+                ),
+            },
+            {
+                path: '/services/:servic',
+                loader: async () => {
+                    return fetch(`/allData.json`);
+                },
+                element: (
+                    <PrivetRoute>
+                        <SinglePage />
                     </PrivetRoute>
                 ),
             },

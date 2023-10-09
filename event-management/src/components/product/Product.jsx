@@ -1,10 +1,17 @@
+import { useNavigate } from 'react-router-dom';
 import '../../assets/css/hover.css';
 
 const Product = ({ product }) => {
-    const { name, price, type, fecerImgUrl } = product || {};
+    const navigate = useNavigate();
+    const { id, name, price, type, fecerImgUrl,  } = product || {};
+    const handalClickProduct = () => {
+        navigate(`/services/${id}`);
+    };
     return (
         <>
-            <div className="w-full prodactContainer ">
+            <div
+                className="w-full prodactContainer "
+                onClick={handalClickProduct}>
                 <div className="overflow-hidden relative">
                     <img
                         src={fecerImgUrl}
