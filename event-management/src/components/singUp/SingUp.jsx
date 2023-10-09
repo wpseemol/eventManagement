@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import swal from 'sweetalert';
 
 const SingUp = () => {
     const loginRegInfo = useContext(AuthContext);
@@ -20,10 +21,24 @@ const SingUp = () => {
                 // Signed up Successful
                 // const user = userCredential.user;
                 e.target.reset();
-                navigate('/account');
+                swal({
+                    title: 'Account Sreated Successful',
+                    text: 'If you want to login you can login now👌',
+                    icon: 'success',
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+                        navigate('/account');
+                    }
+                });
             })
             .catch((error) => {
-                console.log(error);
+                swal({
+                    title: 'Something Is Happened',
+                    text: error.message,
+                    icon: 'error',
+                    dangerMode: true,
+                }).then((willDelete) => {});
             });
         console.log(username, fullName, picture);
     };

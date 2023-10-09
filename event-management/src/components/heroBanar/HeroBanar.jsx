@@ -25,38 +25,38 @@ export default function HeroBanar({ children }) {
     return (
         <>
             {/*<!-- Component: Slider with indicators inside --> */}
-            <div className="relative w-full  border sm:border-none glide-02">
+            <div className="relative w-full  sm:border-none glide-02">
                 {/*    <!-- Slides --> */}
                 <div className="overflow-hidden" data-glide-el="track">
-                    <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
-                        <li key={1}>
+                    <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex  overflow-hidden p-0">
+                        <li>
                             <img
                                 src="https://memo.thevendry.com/wp-content/uploads/2022/05/Alexandria_-ballroom_palm_court.jpg"
-                                className="w-full max-w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center m-auto"
+                                className="w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center"
                             />
                         </li>
-                        <li key={2}>
+                        <li>
                             <img
                                 src="https://m.media-amazon.com/images/I/81O8PyG9EiS._AC_UF894,1000_QL80_.jpg"
-                                className="w-full max-w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center m-auto"
+                                className="w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center"
                             />
                         </li>
-                        <li key={3}>
+                        <li>
                             <img
                                 src="https://plus.unsplash.com/premium_photo-1663040492045-85ba19cbb55d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                                className="w-full max-w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center m-auto"
+                                className="w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center"
                             />
                         </li>
-                        <li key={4}>
+                        <li>
                             <img
                                 src="https://blog.lottenypalace.com/wp-content/uploads/2015/11/Christmas-Lotte-New-York-Palace-960x430.jpg"
-                                className="w-full max-w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center m-auto"
+                                className="w-full  xl:h-[45rem] md:h-96 h-80 object-fill object-center"
                             />
                         </li>
-                        <li key={5}>
+                        <li>
                             <img
                                 src="https://blog.lottenypalace.com/wp-content/uploads/2015/11/Holiday-Parties-Lotte-New-York-Palace.jpg"
-                                className="w-full max-w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center m-auto"
+                                className="w-full xl:h-[45rem] md:h-96 h-80 object-fill object-center"
                             />
                         </li>
                     </ul>
@@ -91,10 +91,10 @@ export default function HeroBanar({ children }) {
                     </button>
                 </div>
 
-                <div className="absolute top-0 left-0 w-screen">{children}</div>
-                <div className="absolute top-0 w-screen bg-gray-700/40 h-full">
+                <div className="absolute top-0 left-0 w-full">{children}</div>
+                <div className="absolute top-0 w-full bg-gray-700/40 h-full">
                     <div className="flex flex-col items-center justify-center text-white">
-                        <div className=" xl:mt-52 md:py-28 py-24 px-2">
+                        <div className=" xl:mt-52 md:py-28 py-24 sm:px-2 px-2">
                             <h3 className="sm:text-xl text-sm font-semibold uppercase">
                                 welcome to event rentals
                             </h3>
@@ -109,7 +109,9 @@ export default function HeroBanar({ children }) {
                                 <br className="hidden sm:block" /> doloremque
                                 laudantium,We Are solar the
                             </p>
-                            <button className="secondaryBtn sm:mt-4">find more</button>
+                            <button className="secondaryBtn sm:mt-4">
+                                find more
+                            </button>
                         </div>
                     </div>
                 </div>

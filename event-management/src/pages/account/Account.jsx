@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
+import swal from 'sweetalert';
 
 const Account = () => {
     const loginRegInfo = useContext(AuthContext);
@@ -20,7 +21,18 @@ const Account = () => {
                 // Login  Successful
                 const user = userCredential.user;
                 e.target.reset();
-                location?.state ? navigate('location?.state') : navigate('/');
+                swal({
+                    title: 'Account Sreated Successful',
+                    text: 'If you want to login you can login now👌',
+                    icon: 'success',
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+                        location?.state
+                            ? navigate('location?.state')
+                            : navigate('/');
+                    }
+                });
             })
             .catch((error) => {
                 console.log(error.message, 'code- ' + error.code);
@@ -32,11 +44,28 @@ const Account = () => {
             .then((result) => {
                 //successful login with Google
                 const user = result.user;
-                location?.state ? navigate('location?.state') : navigate('/');
+
+                swal({
+                    title: 'Account Sreated Successful',
+                    text: 'If you want to login you can login now👌',
+                    icon: 'success',
+                    dangerMode: true,
+                }).then((willDelete) => {
+                    if (willDelete) {
+                        location?.state
+                            ? navigate('location?.state')
+                            : navigate('/');
+                    }
+                });
             })
             .catch((error) => {
                 // Handle Errors here.
-                console.log(error);
+                swal({
+                    title: 'Something Is Happened',
+                    text: error.message,
+                    icon: 'error',
+                    dangerMode: true,
+                }).then((willDelete) => {});
             });
     };
 
