@@ -11,3 +11,7 @@
 .abaterImageHover:hover .loginInformationShow{
     display: block;
 }
+
+.hoverForComingSocialMedia:hover .viseableSosaimidia{
+    right: 12px;
+}

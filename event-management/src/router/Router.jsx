@@ -72,6 +72,9 @@ const Router = createBrowserRouter([
             {
                 path: '/about',
                 element: <About />,
+                loader: async () => {
+                    return fetch(`/allData.json`);
+                },
             },
         ],
     },

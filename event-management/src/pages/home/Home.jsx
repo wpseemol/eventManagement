@@ -144,7 +144,7 @@ const Home = () => {
             </section>
             {/* Tablescape Services */}
             <section className=" bg-green-500/25">
-                <div className="w-screen  sm:flex">
+                <div className="w-full sm:flex">
                     <div className="sm:w-1/2 lg:h-[45rem] md:h-[30rem] h-96 ">
                         <img
                             src="https://i.ibb.co/JBv8tBw/tabilcape.jpg"

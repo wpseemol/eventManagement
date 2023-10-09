@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../providers/AuthProvider';
 import swal from 'sweetalert';
@@ -10,6 +10,11 @@ const SingUp = () => {
     const { singUp } = loginRegInfo || {};
 
     const navigate = useNavigate();
+
+    const [regPassShow, setRegPassShow] = useState();
+    const heandelRegShowHidePass = () => {
+        setRegPassShow(!regPassShow);
+    };
 
     const handleSingUp = (e) => {
         e.preventDefault();
@@ -117,7 +122,7 @@ const SingUp = () => {
                             </label>
                             <input
                                 required
-                                type="password"
+                                type={regPassShow ? 'text' : 'password'}
                                 name="password"
                                 placeholder="Password"
                                 className="w-full border px-4 py-3 rounded-md dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100 focus:dark:border-green-400 outline-green-500"
@@ -128,7 +133,18 @@ const SingUp = () => {
                                 </a>
                             </div>
                         </div>
-
+                        <div>
+                            <input
+                                onChange={heandelRegShowHidePass}
+                                type="checkbox"
+                                name="remember"
+                                aria-label="Remember me"
+                                className="mr-1 rounded-sm focus:ri focus:dark:border-black focus:border-black accent-black/40"
+                            />
+                            <label className="text-sm dark:text-gray-400">
+                                Show password
+                            </label>
+                        </div>
                         <input
                             type="submit"
                             value="Sign Up"

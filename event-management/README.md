@@ -1,4 +1,4 @@
-# [Event management](https://651461f6fc953b2030e72d28--capable-faloodeh-7aef99.netlify.app/)
+# [Event management]()
 
 ## Add at 5 Project features.
 
