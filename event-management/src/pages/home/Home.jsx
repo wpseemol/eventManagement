@@ -1,4 +1,4 @@
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import HappyClint from '../../components/happyClint/HappyClint';
 import TemMember from '../../components/temMember/temMember';
 import Product from '../../components/product/Product';
@@ -59,9 +59,11 @@ const Home = () => {
                             Trade Show <br className="lg:block hidden" />{' '}
                             Experience
                         </h2>
-                        <button className="primaryBtn uppercase">
-                            get IN Touch
-                        </button>
+                        <Link to="/contact">
+                            <button className="primaryBtn uppercase">
+                                get IN Touch
+                            </button>
+                        </Link>
                     </div>
                     <div className="md:w-3/4 grid sm:grid-cols-2 grid-cols-1 gap-4">
                         {experience?.map((data, idx) => {
@@ -116,8 +118,8 @@ const Home = () => {
                 </div>
             </section>
             {/* clint section */}
-            <section className="py-24 px-2">
-                <div className="glide-09 relative w-full">
+            <section className="py-24 px-2 w-full overflow-hidden">
+                <div className="glide-09 relative ">
                     <div data-glide-el="track">
                         <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex w-full overflow-hidden p-0">
                             {clint?.map((singClint, inx) => {
@@ -158,9 +160,11 @@ const Home = () => {
                                 Donec vel mauris ac ante mollis egestas ac sed
                                 magna. Duis sit amet fermentum et ipsum nec.
                             </p>
-                            <button className="primaryBtn uppercase ">
-                                get in touch
-                            </button>
+                            <Link to="/contact">
+                                <button className="primaryBtn uppercase ">
+                                    get in touch
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -203,6 +207,13 @@ const Home = () => {
                                 />
                             );
                         })}
+                    </div>
+                    <div className="flex justify-center mt-6 -mb-8">
+                        <Link to="/services">
+                            <button className="secondaryBtn  bg-green-500/25">
+                                View All
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </section>

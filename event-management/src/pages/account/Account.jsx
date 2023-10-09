@@ -29,7 +29,7 @@ const Account = () => {
                 }).then((willDelete) => {
                     if (willDelete) {
                         location?.state
-                            ? navigate('location?.state')
+                            ? navigate(location?.state)
                             : navigate('/');
                     }
                 });

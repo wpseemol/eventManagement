@@ -24,6 +24,9 @@ const Router = createBrowserRouter([
             },
             {
                 path: '/services',
+                loader: async () => {
+                    return fetch(`/allData.json`);
+                },
                 element: (
                     <PrivetRoute>
                         <Services />
