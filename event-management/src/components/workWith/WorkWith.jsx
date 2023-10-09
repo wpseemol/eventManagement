@@ -15,5 +15,5 @@ const WorkWith = ({ singClint, inx }) => {
 export default WorkWith;
 WorkWith.propTypes = {
     singClint: PropTypes.object,
-    inx: PropTypes.string,
+    inx: PropTypes.number,
 };

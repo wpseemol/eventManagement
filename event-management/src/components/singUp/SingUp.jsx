@@ -40,7 +40,7 @@ const SingUp = () => {
                 swal({
                     title: 'Account Sreated Successful',
                     text: 'If you want to login you can login now👌',
-                    icon: 'info',
+                    icon: 'success',
                     dangerMode: true,
                 }).then((willDelete) => {
                     if (willDelete) {

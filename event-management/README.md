@@ -1,8 +1,14 @@
-# React + Vite
+# [Event management](https://651461f6fc953b2030e72d28--capable-faloodeh-7aef99.netlify.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Add at 5 Project features.
 
-Currently, two official plugins are available:
+- First of all this side is authenticated by Google firebase width private router
+- look creative design with responsive, when you click a product it's going to a single phase, and the single pieces are so cutie.
+- password authentication is used Ajax, login page, and registration page are toggled. when click sign up text and log in text.
+- privacy policy section is on the privacy policy page.service page contained all services those services are rain rent website this website
+- the social event organizer is our cited main purpose.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+
+

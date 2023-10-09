@@ -52,15 +52,20 @@ const Home = () => {
             <section
                 style={{ backgroundColor: experienceColor }}
                 className="py-24">
-                <div className="myContainer md:flex px-4">
-                    <div className="md:w-1/4 mb-10 md:mb-0 text-center md:text-left">
+                <div className="myContainer md:flex px-4" data-aos="flip-up">
+                    <div
+                        className="md:w-1/4 mb-10 md:mb-0 text-center md:text-left"
+                        data-aos="zoom-in">
                         <h2 className="md:text-5xl text-3xl font-semibold mb-5 ">
                             Maximize Your <br className="lg:block hidden" />{' '}
                             Trade Show <br className="lg:block hidden" />{' '}
                             Experience
                         </h2>
                         <Link to="/contact">
-                            <button className="primaryBtn uppercase">
+                            <button
+                                className="primaryBtn uppercase"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
                                 get IN Touch
                             </button>
                         </Link>
@@ -91,7 +96,9 @@ const Home = () => {
             {/* Premium section */}
             <section className="myContainer py-24">
                 <div className="lg:flex gap-6 px-2 sm:px-0">
-                    <div className="lg:w-1/2 sm:flex lg:block gap-2 lg:mb-0 mb-5">
+                    <div
+                        data-aos="zoom-in-right"
+                        className="lg:w-1/2 sm:flex lg:block gap-2 lg:mb-0 mb-5">
                         <div className="h-1/2 lg:w-fit sm:w-1/2">
                             <h2 className="lg:text-5xl text-3xl font-semibold mb-5 ">
                                 {premium[0]?.title}
@@ -108,7 +115,7 @@ const Home = () => {
                             />
                         </div>
                     </div>
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2" data-aos="zoom-in-left">
                         <img
                             src={premium[0]?.imageUrl}
                             alt="Premium Item Image"
@@ -146,7 +153,9 @@ const Home = () => {
                         />
                     </div>
                     <div className="sm:w-1/2 flex items-center lg:ml-32 md:ml-20 ml-5 pb-5 sm:pb-0">
-                        <div>
+                        <div
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
                             <h2 className="md:text-5xl text-3xl font-semibold ">
                                 Tablescape Rentals And Services
                             </h2>
@@ -160,7 +169,10 @@ const Home = () => {
                                 Donec vel mauris ac ante mollis egestas ac sed
                                 magna. Duis sit amet fermentum et ipsum nec.
                             </p>
-                            <Link to="/contact">
+                            <Link
+                                to="/contact"
+                                data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-bottom">
                                 <button className="primaryBtn uppercase ">
                                     get in touch
                                 </button>
@@ -209,7 +221,10 @@ const Home = () => {
                         })}
                     </div>
                     <div className="flex justify-center mt-6 -mb-8">
-                        <Link to="/services">
+                        <Link
+                            to="/services"
+                            data-aos="fade-up"
+                            data-aos-anchor-placement="bottom-bottom">
                             <button className="secondaryBtn  bg-green-500/25">
                                 View All
                             </button>
