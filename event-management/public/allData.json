@@ -117,12 +117,12 @@
                 ["Glass Top", "34\" Dia. Tempered Glass"],
                 ["Base Material", "Steel, Electroplated"]
             ],
-            "fecerImgUrl": "https://i.ibb.co/sJYqGn7/Mobile-AC.jpg",
+            "fecerImgUrl": "https://i.ibb.co/xzZStJC/Mobile-AC.jpg",
             "imgGallery": [
                 "https://i.ibb.co/HV5HKhQ/Mobile-AC-4.jpg",
                 "https://i.ibb.co/7C4pWz9/Mobile-AC-3.jpg",
-                "https://i.ibb.co/Hq0zL45/Mobile-AC-2.jpg"
-                
+                "https://i.ibb.co/Hq0zL45/Mobile-AC-2.jpg",
+                "https://i.ibb.co/sJYqGn7/Mobile-AC.jpg"
             ]
         },
         {
@@ -150,7 +150,6 @@
                 "https://i.ibb.co/nbzstgc/Coffee-Table-4.jpg",
                 "https://i.ibb.co/HDnnQJv/Coffee-Table-3.jpg",
                 "https://i.ibb.co/kGCcxft/Coffee-Table-2.jpg"
-                
             ]
         },
         {
@@ -178,7 +177,95 @@
             "imgGallery": [
                 "https://i.ibb.co/kMMLc4f/Patio-umbrella4.webp",
                 "https://i.ibb.co/kGCcxft/Coffee-Table-2.jpg",
-                "https://i.ibb.co/nbzstgc/Coffee-Table-4.jpg"
+                "https://i.ibb.co/nbzstgc/Coffee-Table-4.jpg",
+                "https://i.ibb.co/YW9WN9v/Patio-umbrella.jpg"
+            ]
+        },
+        {
+            "id": "item-4",
+            "name": "Nice Chair",
+            "price": "99.00/ Week",
+            "type": "Chair",
+            "disc": "This dynamic Collection is a modern twist on traditional pieces. Crisp, white china is punctuated with bold color bands and accented with gold rims allowing for a multitude of mix and match color combinations. Available in black, green, turquoise, orange, purple and pink. Note: Purple available in dinner and salad plate. Pink and orange available in a salad/dessert plate only.",
+            "Features": [
+                "Plates, bowls, and saucers available in quantities of 5's.",
+                "Coffee cup available in full racks of 16 or half racks of 8 each",
+                "Pink, Orange and Purple plates not available in all sizes.",
+                "Contact customer service for additional information."
+            ],
+
+            "dimensions": [
+                ["General Dimensions", "34\" Dia. x 16\" H"],
+                ["Marble Top", "31\" Dia. Carrara Marble"],
+                ["Wood Top", "4\" Dia. Solid Ash (hardwood)"],
+                ["Glass Top", "34\" Dia. Tempered Glass"],
+                ["Base Material", "Steel, Electroplated"]
+            ],
+
+            "fecerImgUrl": "https://i.ibb.co/D1H1WL6/product-10.jpg",
+            "imgGallery": [
+                "https://i.ibb.co/KjGxLYK/Nice-Chair-5.jpg",
+                "https://i.ibb.co/mXngkTk/Nice-Chair-4.jpg",
+                "https://i.ibb.co/4WBjzck/Nice-Chair-3.jpg",
+                "https://i.ibb.co/6YfNnz0/product-11.jpg"
+            ]
+        },
+        {
+            "id": "item-5",
+            "name": "Modern Sofa",
+            "price": "8.00/ Hour",
+            "type": "Sofa",
+            "disc": "This dynamic Collection is a modern twist on traditional pieces. Crisp, white china is punctuated with bold color bands and accented with gold rims allowing for a multitude of mix and match color combinations. Available in black, green, turquoise, orange, purple and pink. Note: Purple available in dinner and salad plate. Pink and orange available in a salad/dessert plate only.",
+            "Features": [
+                "Plates, bowls, and saucers available in quantities of 5's.",
+                "Coffee cup available in full racks of 16 or half racks of 8 each",
+                "Pink, Orange and Purple plates not available in all sizes.",
+                "Contact customer service for additional information."
+            ],
+
+            "dimensions": [
+                ["General Dimensions", "34\" Dia. x 16\" H"],
+                ["Marble Top", "31\" Dia. Carrara Marble"],
+                ["Wood Top", "4\" Dia. Solid Ash (hardwood)"],
+                ["Glass Top", "34\" Dia. Tempered Glass"],
+                ["Base Material", "Steel, Electroplated"]
+            ],
+
+            "fecerImgUrl": "https://i.ibb.co/D9Nm7fc/product-12-2.jpg",
+            "imgGallery": [
+                "https://i.ibb.co/XJ5QKW9/product-12-1.jpg",
+                "https://i.ibb.co/8zdyY5V/product-12-3.jpg",
+                "https://i.ibb.co/D9Nm7fc/product-12-2.jpg",
+                "https://i.ibb.co/XJ5QKW9/product-12-1.jpg"
+            ]
+        },
+        {
+            "id": "item-6",
+            "name": "Chair Two",
+            "price": "99.00/ Day",
+            "type": "chari",
+            "disc": "Rent this awesome product for your next dinner party. This dynamic Collection is a modern twist on traditional pieces. Crisp, white china is punctuated with bold color bands and accented with gold rims allowing for a multitude of mix and match color combinations. Available in black, green, turquoise, orange, purple and pink. Note: Purple available in dinner and salad plate. Pink and orange available in a salad/dessert plate only.",
+            "Features": [
+                "Plates, bowls, and saucers available in quantities of 5's.",
+                "Coffee cup available in full racks of 16 or half racks of 8 each",
+                "Pink, Orange and Purple plates not available in all sizes.",
+                "Contact customer service for additional information."
+            ],
+
+            "dimensions": [
+                ["General Dimensions", "34\" Dia. x 16\" H"],
+                ["Marble Top", "31\" Dia. Carrara Marble"],
+                ["Wood Top", "4\" Dia. Solid Ash (hardwood)"],
+                ["Glass Top", "34\" Dia. Tempered Glass"],
+                ["Base Material", "Steel, Electroplated"]
+            ],
+
+            "fecerImgUrl": "https://i.ibb.co/tmW6qbY/product-5.jpg",
+            "imgGallery": [
+                " https://i.ibb.co/xYpGYN2/Chair5.jpg",
+                "https://i.ibb.co/09XpNwG/Chair-4.jpg",
+                "https://i.ibb.co/55R7Zkh/Chair-3.jpg",
+                "https://i.ibb.co/d4rwmLC/Chair-2.jpg"
             ]
         }
     ]

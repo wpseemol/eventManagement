@@ -27,7 +27,7 @@ const SinglePage = () => {
                     <img
                         alt=""
                         className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-                        src={imgGallery}
+                        src={imgGallery[0]}
                     />
                     <img
                         alt=""
@@ -42,7 +42,7 @@ const SinglePage = () => {
                     <img
                         alt=""
                         className="w-full h-full rounded shadow-sm min-h-48 dark:bg-gray-500 aspect-square"
-                        src={imgGallery}
+                        src={imgGallery[3]}
                     />
                 </div>
             </section>
