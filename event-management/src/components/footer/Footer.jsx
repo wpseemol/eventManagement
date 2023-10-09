@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify';
 export default function Footer() {
     return (
         <>
+        {/* this si for tost massage */}
             <ToastContainer />
             {/*    <!-- Component: Five Columns Footer with Logo and Sub Footer --> */}
             <footer className="dark:bg-gray-800 dark:text-gray-50 border-t">

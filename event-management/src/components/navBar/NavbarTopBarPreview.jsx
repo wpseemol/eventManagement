@@ -10,9 +10,6 @@ export default function NavbarTopBarPreview() {
 
     const loginRegInfo = useContext(AuthContext);
     const { user, logOut } = loginRegInfo || {};
-
-    // console.log(user?.email);
-
     return (
         <>
             <div className=" relative border-b-1 z-20 w-full border-b border-gray-800/50 bg-gray-800/50 shadow-lg shadow-slate-700/5 after:absolute after:top-full after:left-0 after:z-10 after:block after:h-px after:w-full after:bg-gray-800/50 lg:border-gray-800/50 lg:backdrop-blur-sm lg:after:hidden text-xl ">

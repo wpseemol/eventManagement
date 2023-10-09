@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const WorkWith = ({ singClint, inx }) => {
     return (
         <li className=" " key={'key' + inx}>
@@ -11,3 +13,7 @@ const WorkWith = ({ singClint, inx }) => {
 };
 
 export default WorkWith;
+WorkWith.propTypes = {
+    singClint: PropTypes.object,
+    inx: PropTypes.string,
+};

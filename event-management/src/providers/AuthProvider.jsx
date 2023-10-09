@@ -12,11 +12,7 @@ import auth from '../firebase/firebase';
 
 export const AuthContext = createContext(null);
 
-
-
 const googleProvider = new GoogleAuthProvider();
-
-
 
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
@@ -33,9 +29,9 @@ const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, siEmail, siPassword);
     };
 
-    const logInGoogle = ()=>{
+    const logInGoogle = () => {
         signInWithPopup(auth, googleProvider);
-    }
+    };
 
     //login chake
     useEffect(() => {

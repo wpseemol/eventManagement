@@ -7,7 +7,6 @@ const LoginInformation = ({ info, logOutFun }) => {
         logOutFun()
             .then(() => {
                 // Sign-out successful.
-                console.log('log out successful');
                 toast('Log out Successful');
             })
             .catch(() => {

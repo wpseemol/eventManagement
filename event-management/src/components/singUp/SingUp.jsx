@@ -33,9 +33,9 @@ const SingUp = () => {
         }
 
         singUp(email, password)
-            .then((userCredential) => {
+            .then(() => {
                 // Signed up Successful
-                // const user = userCredential.user;
+
                 e.target.reset();
                 swal({
                     title: 'Account Sreated Successful',
@@ -54,9 +54,8 @@ const SingUp = () => {
                     text: error.message,
                     icon: 'error',
                     dangerMode: true,
-                }).then((willDelete) => {});
+                }).then(() => {});
             });
-        console.log(username, fullName, picture);
     };
     return (
         <>

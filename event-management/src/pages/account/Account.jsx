@@ -10,7 +10,6 @@ const Account = () => {
     const { singIn, logInGoogle } = loginRegInfo || {};
 
     const location = useLocation();
-    console.log();
 
     const navigate = useNavigate();
 
@@ -27,15 +26,15 @@ const Account = () => {
             toast('Password must least one capital letter.');
             return;
         }
-        if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)) {
+        if (!/[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password)) {
             toast('Password must at least one special character.');
             return;
         }
 
         singIn(email, password)
-            .then((userCredential) => {
+            .then(() => {
                 // Login  Successful
-                const user = userCredential.user;
+
                 e.target.reset();
                 swal({
                     title: 'Account Login Successful',
@@ -56,15 +55,14 @@ const Account = () => {
                     text: error.message,
                     icon: 'error',
                     dangerMode: true,
-                }).then((willDelete) => {});
+                }).then(() => {});
             });
     };
 
     const handalLoginwitheGoogle = () => {
         logInGoogle()
-            .then((result) => {
+            .then(() => {
                 //successful login with Google
-                const user = result.user;
 
                 swal({
                     title: 'Login Successful',
@@ -86,7 +84,7 @@ const Account = () => {
                     text: error.message,
                     icon: 'error',
                     dangerMode: true,
-                }).then((willDelete) => {});
+                }).then(() => {});
             });
     };
 
@@ -168,7 +166,7 @@ const Account = () => {
                         </button>
                     </div>
                     <p className="text-xs text-center sm:px-6 dark:text-gray-400">
-                        <span>Don't have an account?</span>
+                        <span>Do Not have an account?</span>
                         <Link
                             rel="noopener noreferrer"
                             to="/sign-up"

@@ -1,4 +1,5 @@
 import CountUp from 'react-countup';
+import PropTypes from 'prop-types';
 
 const HappyClint = ({ info }) => {
     const { icon, number, proj, title, description } = info || {};
@@ -39,3 +40,7 @@ const HappyClint = ({ info }) => {
 };
 
 export default HappyClint;
+
+HappyClint.propTypes = {
+    info: PropTypes.object.isRequired,
+};

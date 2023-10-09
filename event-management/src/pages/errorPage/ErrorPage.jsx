@@ -1,4 +1,3 @@
-import React from 'react';
 import Footer from '../../components/footer/Footer';
 import NavbarTopBarPreview from '../../components/navBar/NavbarTopBarPreview';
 import { Link } from 'react-router-dom';
@@ -17,7 +16,7 @@ const ErrorPage = () => {
                                 <span className="sr-only">Error</span>404
                             </h2>
                             <p className="text-2xl font-semibold md:text-3xl">
-                                Sorry, we couldn't find this page.
+                                {`Sorry, we couldn't find this page.`}
                             </p>
                             <p className="mt-4 mb-8 dark:text-gray-400">
                                 But dont worry, you can find plenty of other

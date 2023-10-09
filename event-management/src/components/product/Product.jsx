@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import '../../assets/css/hover.css';
 
 const Product = ({ product }) => {
@@ -36,3 +37,7 @@ const Product = ({ product }) => {
 };
 
 export default Product;
+
+Product.propTypes ={
+    product: PropTypes.object.isRequired,
+} 

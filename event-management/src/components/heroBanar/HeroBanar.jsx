@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Glide from '@glidejs/glide';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 export default function HeroBanar({ children }) {
     useEffect(() => {
@@ -121,3 +122,8 @@ export default function HeroBanar({ children }) {
         </>
     );
 }
+
+
+HeroBanar.propTypes = {
+    children: PropTypes.node.isRequired,
+};

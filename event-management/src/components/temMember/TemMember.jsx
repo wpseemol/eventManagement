@@ -1,7 +1,7 @@
+import PropTypes from 'prop-types';
 
-
-const TemMember = ({temMember}) => {
-    const { name, imgUrl,jobs} = temMember || {};
+const TemMember = ({ temMember }) => {
+    const { name, imgUrl, jobs } = temMember || {};
     return (
         <div className="bg-green-100 hover:-translate-y-3  duration-300 relative">
             <img
@@ -14,9 +14,12 @@ const TemMember = ({temMember}) => {
                 <h3 className="text-xl font-medium">{jobs}</h3>
             </div>
             {/* sociale media  */}
-            
         </div>
     );
 };
 
 export default TemMember;
+
+TemMember.propTypes = {
+    temMember: PropTypes.object.isRequired,
+};

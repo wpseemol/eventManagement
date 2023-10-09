@@ -9,10 +9,9 @@ const PrivetRoute = ({ children }) => {
     const { user, loading } = loginRegInfo || {};
 
     const location = useLocation();
-    
 
     if (loading) {
-        return <Loading /> ;
+        return <Loading />;
     }
     if (user) {
         return children;
@@ -22,7 +21,6 @@ const PrivetRoute = ({ children }) => {
 };
 
 export default PrivetRoute;
-
 
 PrivetRoute.propTypes = {
     children: PropTypes.node,

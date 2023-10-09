@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PrivacyPolicy = () => {
     return (
         <section className="myContainer py-10 text-lg font-medium">
@@ -68,7 +66,7 @@ const PrivacyPolicy = () => {
                         contains no personal data and is discarded when you
                         close your browser.
                         <br />
-                        When you log in, we will also set up several cookies to
+                        {`When you log in, we will also set up several cookies to
                         save your login information and your screen display
                         choices. Login cookies last for two days, and screen
                         options cookies last for a year. If you select "Remember
@@ -78,7 +76,7 @@ const PrivacyPolicy = () => {
                         If you edit or publish an article, an additional cookie
                         will be saved in your browser. This cookie includes no
                         personal data and simply indicates the post ID of the
-                        article you just edited. It expires after 1 day.
+                        article you just edited. It expires after 1 day.`}
                     </p>
                 </div>
                 <div>
