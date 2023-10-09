@@ -20,9 +20,9 @@ const SingUp = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        const username = e.target.username.value;
-        const fullName = e.target.name.value;
-        const picture = e.target.picture.value;
+        // const username = e.target.username.value;
+        // const fullName = e.target.name.value;
+        // const picture = e.target.picture.value;
 
         if (password.length < 6) {
             toast('Password less than 6 Character.');
